@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('head') %>
+    <link rel="stylesheet" type="text/css" href="/css/app.css">
+    
+    <title>Add Listing</title>
+</head>
+
+
+<body>
+    <div>
+        <%- include('navbar') %>
+    </div>
+   
+
+    <form action="/" method="post">
+       
+   
+            <div class="form-box">
+                <h1 class="head"> Add new listing</h1>
+                <div class="formbox">
+           
+                 
+            <input type="text" name="address.content.nameOfListing" id="address.content.nameOfListing" placeholder="Name of listing" required>
+        </div>
+      
+        <div class="formbox">
+            
+            <input type="text" name="address.content.userName" id="address.content.userName" placeholder="Username" required>
+        </div>
+     
+        <div class="formbox">
+            
+           
+        </div>
+        <textarea name="address.content.review" id="address.content.review" cols="30" rows="3" placeholder="Enter your review" required></textarea>
+       
+        <div class="formbox">
+        
+        </div>
+        <textarea name="address.content.description" id="address.content.description" cols="30" rows="1" placeholder="Enter your short description" required></textarea>
+        <textarea name="address.content.addresses" id="address.content.addresses" cols="30" rows="3" placeholder="Enter address" required></textarea>
+        <div class="formbox">
+            <input type="text" name="address.coords.lat" id="address.coords.lat" placeholder="Enter Latitude" required>
+          
+        </div>
+     
+        <div class="formbox">
+           
+            <input type="text" name="address.coords.lng" id="address.coords.lng" placeholder="Enter Longitude" required>
+        </div>
+        
+        <a href="/" class="cancel"> Cancel</a>
+        <button class="btn1">Submit</button>
+    </form>
+    
+</body>
+</html>

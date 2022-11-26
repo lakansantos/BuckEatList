@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/app.css">
+    <link rel="icon" type="image/svg+xml" href="https://example.com/image.svg">
+   
+
+    <script src= "/js/bootstrap.min.js"></script>
+    
+   <%- include('reviews/head') %>
+    <title>Home</title>
+</head>
+<style>
+    #map{
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        height: 400px;
+        width: 500px;
+    }
+    .content{
+        position: absolute;
+        left:25%;
+   
+        
+    }
+    ul {
+list-style-type: none;
+text-decoration: none;
+padding: 5px;
+margin: 5px;
+}
+.lists{
+        width: 100px;
+        background: #187B85;
+        color: white;
+        padding: 5px;
+        font-size: 18px;
+        border: none;
+        cursor: pointer;
+        margin: 12px 0;
+        border-radius: 10px;
+        text-decoration: none;
+        font-family: sans-serif;
+}
+.lists:hover{
+
+    color:black;
+}
+</style>
+<body>
+ 
+    <%- include('reviews/navbar') %>
+    <div class="content">
+        <h1> Listings</h1>
+        <ul>
+            <% for(let list of listing){ %>
+                <li>
+                    <br><a class="lists" id="lists" href="/<%=list._id%>"><%=list.address.content.nameOfListing%></a>
+                </li>
+          <%  } %>
+           </ul>
+         
+    
+    </div>
+    <div class="add1">
+        <a href="/new/addnew"><button class="add">+</button></a>
+    </div>
+
+<%- include('reviews/maps')%>
+
+
+    
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('head') %>
+    <link rel="stylesheet" type="text/css" href="/css/app.css">
+    <link rel="icon" type="image/svg+xml" href="https://example.com/image.svg">
+    <title>Update Listing</title>
+</head>
+<body>
+    <%- include('navbar') %>
+    
+    <form action="/<%=listing._id%>?_method=PUT" method="POST">
+        <div class="form-box">
+            <h1 class="head"> Update listing</h1>
+            <div class="formbox">
+       
+        <input type="text" name="address.content.nameOfListing" id="address.content.nameOfListing" value="<%=listing.address.content.nameOfListing%>" required>
+    </div>
+  
+    <div class="formbox">
+        
+        <input type="text" name="address.content.userName" id="address.content.userName"value="<%=listing.address.content.userName%>" required>
+    </div>
+ 
+    <div class="formbox">
+        
+       
+    </div>
+    <textarea name="address.content.review" id="address.content.review" cols="31" rows="3"  required><%=listing.address.content.review%></textarea>
+   
+    <div class="formbox">
+    
+    </div>
+    <textarea name="address.content.description" id="address.content.description" cols="31" rows="1" required><%=listing.address.content.description%></textarea>
+    <textarea name="address.content.addresses" id="address.content.addresses" cols="31" rows="3"  required><%=listing.address.content.addresses%></textarea>
+    <div class="formbox">
+        <input type="text" name="address.coords.lat" id="address.coords.lat" value="<%=listing.address.coords.lat%>" required>
+      
+    </div>
+ 
+    <div class="formbox">
+       
+        <input type="text" name="address.coords.lng" id="address.coords.lng" value="<%=listing.address.coords.lng%>" required>
+    </div>
+   
+    <br>
+    <a href="/<%=listing._id%>" class="cancel"> Cancel</a>
+    <button class="btn1">Update</button>
+</form>
+    
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('head') %>
+    <link rel="icon" type="image/svg+xml" href="https://example.com/image.svg">
+    <link rel="stylesheet" type="text/css" href="/css/app.css">
+    <title>Add review</title>
+</head>
+<body>
+    <%- include('navbar') %>
+    <form action="/<%=listing._id%>" method="post">
+       
+   
+        <div class="form-box">
+            <h1 class="head"> Add review</h1>
+            
+  
+    <div class="formbox">
+        
+        <input type="text" name="userName" id="userName" placeholder="Username" required>
+    </div>
+ 
+    <div class="formbox">
+        
+       
+    </div>
+    <textarea name="review" id="review" cols="30" rows="5" placeholder="Enter your review" required></textarea>
+   
+    <a href="/<%=listing._id%>" class="cancel"> Cancel</a>
+    <button class="btn1">Submit</button>
+</form>
+</body>
+</html>

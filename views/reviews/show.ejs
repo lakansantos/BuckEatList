@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="https://example.com/image.svg">
+    <link rel="stylesheet" type="text/css" href="/css/app.css">
+    <title><%=listing.address.content.nameOfListing %></title>
+</head>
+<body>
+   
+    <a href="/" class="seel">See listings</a>
+    
+ 
+    <a href="/<%=listing._id %>/updateListing " class="edit">Edit </a>
+    
+    
+    <a href="/<%=listing._id %>/review/add" class="review">Review</a>
+
+    <form action="/<%=listing._id %>?_method=DELETE" method="POST"><button class="delete" >Delete</button></form>
+
+    <div class="contents">
+    <h1> <%= listing.address.content.nameOfListing %> </h1>
+    <ul>
+ 
+        <li>Reviews: User: <%=listing.address.content.userName %>:  "<%=listing.address.content.review%>"</li>
+        <li>Description: <%=listing.address.content.description%></li>
+        <li>Address: <%=listing.address.content.addresses%></li>
+        <li>Latitude: <%=listing.address.coords.lat%></li>
+        <li>Longitude: <%=listing.address.coords.lng%></li>
+     
+    </ul>
+
+</div>
+
+
+</body>
+</html>
