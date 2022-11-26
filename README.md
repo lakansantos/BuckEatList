@@ -1,7 +1,7 @@
 # BuckeatList
 A website that allows user to display the information they've provided from the form through the map. 
 
-## To access the demo, kindly install 
+## To access the demo, kindly install, if you have all of it, you can set up a .env file and declare your API key there
 1. npm i express
 2. npm i mongoose
 3. npm i ejs
