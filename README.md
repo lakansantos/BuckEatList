@@ -1,16 +1,19 @@
 # BuckeatList
 A website that allows user to display the information they've provided from the form through the map. 
 
-## To access the demo, kindly install, if you have all of it, you can set up a .env file and declare your API key there
-1. npm i express
-2. npm i mongoose
-3. npm i ejs
-4. npm i method-override
-5. npm i nodemon
-6. npm i bootstrap
-7. npm install dotenv --save
+## To access the demo, kindly install these in your terminal. If you have all of it, you can set up a .env file and declare your API key there.
+### Make sure you have mongodb, mongod, and mongosh installed in your device.
 
-### Make sure you have mongodb, mongod, and mongosh
+
+- npm i express
+- npm i mongoose
+- npm i ejs
+- npm i method-override
+- npm i nodemon
+- npm i bootstrap
+- npm install dotenv --save
+
+
 
 Regarding .env file. 
 
