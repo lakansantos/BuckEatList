@@ -8,7 +8,7 @@ A website that allows user to display the information they've provided from the 
 4. npm i method-override
 5. npm i nodemon
 6. npm i bootstrap
-
+7. npm install dotenv --save
 
 ### Make sure you have mongodb, mongod, and mongosh
 
