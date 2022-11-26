@@ -1,6 +1,6 @@
 # BuckeatList 
 
-## - A simple website that allows user to display the information of any location that relates to food on the map. It can be a restaurant, food courts, etc. 
+##  A simple website that allows user to display the information of any location that relates to food on the map. It can be a restaurant, food courts, etc. 
 
 ### To access the demo, kindly install these in your terminal. If you have all of it, you can set up a .env file and declare your API key there.
 ### I used API key in JavaScript Google. You can use it, too!  Click [here](https://developers.google.com/maps/documentation/javascript) for more details 
