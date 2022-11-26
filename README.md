@@ -11,3 +11,12 @@ A website that allows user to display the information they've provided from the 
 
 
 ### Make sure you have mongodb, mongod, and mongosh
+
+Regarding .env file. 
+
+1. You must input your api key and declare it as
+
+API_KEY = YourAPIkey
+
+2. Port = any port you want
+3. DBPORT ='mongodb://localhost:27017/Listing'
