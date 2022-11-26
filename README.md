@@ -21,7 +21,7 @@ Regarding .env file.
 
 1. You must input your api key and declare it as
 
-API_KEY = YourAPIkey
+    API_KEY = YourAPIkey
 
 2. Port = any port you want
 3. DBPORT ='mongodb://localhost:27017/Listing'
